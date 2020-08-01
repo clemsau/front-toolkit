@@ -16,7 +16,7 @@ export default function Home( allToolsData ) {
 
       <main>
       <ul>
-        {allToolsData.map(({ id, name, url, description, tags }) => (
+        {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
           <li key={id}>
             <a href={url} blank="true">{name}</a>
             <br/>
