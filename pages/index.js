@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
-import ToolCard, { siteTitle } from '../components/ToolCard'
+import ToolCard from '../components/ToolCard'
 
 import { getToolsData } from '../lib/tools'
 
@@ -15,12 +15,13 @@ export default function Home( allToolsData ) {
       </Head>
 
       <main>
+        <div id="header-background">
+          <img src="images/Vector_1.svg" id="vector-1"></img>
+        </div>
+        
       <ul>
         {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
-          <li key={id}>
-            <a href={url} blank="true">{name}</a>
-            <br/>
-          </li>
+          <ToolCard name={name} description={description} url={url} tags={tags}></ToolCard>
         ))}
       </ul>
       </main>

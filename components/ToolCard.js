@@ -1,7 +1,13 @@
-export default function ToolCard({}) {
+export default function ToolCard({name, description, url, tags}) {
     return (
         <div>
-            <h1>Test</h1>
+            <a href={url} target="_blank"><h1>{name}</h1></a>
+            <p>{description}</p>
+            <ul>
+            {tags.map(tag => (
+                <li>{tag}</li>
+            ))}
+            </ul>
         </div>
     )
 }

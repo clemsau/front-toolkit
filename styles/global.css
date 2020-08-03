@@ -2,3 +2,18 @@
     padding: 0;
     margin: 0;
 }
+
+#header-background {
+    background-image: url('images/purple_blue_gradient.bmp');
+    background-size: cover;
+    position: relative;
+    height: 8rem;
+    width: 100%;
+}
+
+#vector-1 {
+    position: absolute;
+    bottom: 0;
+    max-height: 3rem;
+    width: 100%;
+}
