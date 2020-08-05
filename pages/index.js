@@ -12,18 +12,24 @@ export default function Home( allToolsData ) {
       <Head>
         <title>Front toolkit</title>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"/> 
       </Head>
 
       <main>
         <div id="header-background">
+          <h1 id="title">Front toolkit</h1>
           <img src="images/Vector_1.svg" id="vector-1"></img>
         </div>
         
-      <ul>
-        {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
-          <ToolCard name={name} description={description} url={url} tags={tags}></ToolCard>
-        ))}
-      </ul>
+      <div className="row">  
+        <div className="side-content"></div>  
+        <div className="main-content">
+          {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
+            <ToolCard name={name} description={description} url={url} tags={tags}></ToolCard>
+          ))}
+        </div>
+        <div className="side-content"></div>
+        </div>
       </main>
     </div>
   )
