@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import ToolCard from '../components/ToolCard'
 
-import { getToolsData, getAllTags } from '../lib/tools'
+import { getToolsData } from '../lib/tools'
 
 
 export default function Home( allToolsData ) {
@@ -25,7 +25,7 @@ export default function Home( allToolsData ) {
         <div className="side-content"></div>  
         <div className="main-content">
           {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
-            <ToolCard id={id} name={name} description={description} url={url} tags={tags}></ToolCard>
+            <ToolCard key={id} name={name} description={description} url={url} tags={tags}></ToolCard>
           ))}
         </div>
         <div className="side-content"></div>
