@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import ToolCard from '../components/ToolCard'
 
-import { getToolsData } from '../lib/tools'
+import { getToolsData, getToolsTags } from '../lib/tools'
 
 
 export default function Home( allToolsData ) {
@@ -24,6 +24,7 @@ export default function Home( allToolsData ) {
       <div className="row">  
         <div className="side-content"></div>  
         <div className="main-content">
+          {console.log(tags)}
           {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
             <ToolCard key={id} name={name} description={description} url={url} tags={tags}></ToolCard>
           ))}
@@ -37,9 +38,11 @@ export default function Home( allToolsData ) {
 
 export async function getStaticProps() {
   const allToolsData = getToolsData()
+  const tags = getToolsTags()
   return {
     props: {
       allToolsData,
+      tags
     }
   }
 }
