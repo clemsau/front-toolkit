@@ -1,8 +1,8 @@
 ---
-name: "Royaltee Free Illustrations"
+name: undraw.co/illustrations
 url: "https://undraw.co/illustrations"
 description: "A collection of royaltee free svg illustrations"
 tags: 
-    - Illustrations
+    - illustration
     - svg
 ---

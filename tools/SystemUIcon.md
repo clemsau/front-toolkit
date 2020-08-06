@@ -1,8 +1,8 @@
 ---
-name: "A svg icon collection"
-url: "https://systemuicons.com/"
-description: "A collection of 220 downloadable svg icons"
+name: systemuicons.com
+url: https://systemuicons.com/
+description: A collection of 220 downloadable svg icons
 tags: 
-    - icons
+    - icon
     - svg
 ---
