@@ -1,4 +1,4 @@
-export default function ToolCard({name, description, url, tags}) {
+export default function ToolCard({id, name, description, url, tags}) {
     return (
         <a href={url} target="_blank">
             <div className="tool-card s-padded-container row">
