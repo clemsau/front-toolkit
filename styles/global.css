@@ -86,6 +86,10 @@
     color: #767676;
 }
 
+.xs-padded-container {
+    padding: 0.5rem;
+}
+
 .s-padded-container {
     padding: 1rem;
 }

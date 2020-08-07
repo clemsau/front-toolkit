@@ -22,14 +22,14 @@ export default function Home( allToolsData ) {
         </div>
         
       <div className="row">  
-        <div className="side-content"></div>  
-        <div className="main-content">
+        <div className="side-content xs-padded-container"></div>  
+        <div className="main-content xs-padded-container">
           {console.log(tags)}
           {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
             <ToolCard key={id} name={name} description={description} url={url} tags={tags}></ToolCard>
           ))}
         </div>
-        <div className="side-content"></div>
+        <div className="side-content xs-padded-container"></div>
         </div>
       </main>
     </div>
