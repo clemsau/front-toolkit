@@ -22,14 +22,22 @@ export default function Home( allToolsData ) {
         </div>
         
       <div className="row">  
-        <div className="side-content xs-padded-container"></div>  
-        <div className="main-content xs-padded-container">
-          {console.log(tags)}
-          {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
-            <ToolCard key={id} name={name} description={description} url={url} tags={tags}></ToolCard>
-          ))}
+        <div className="side-content"></div>  
+        <div className="main-content">
+          <div>
+            <ul>
+            {allToolsData.allTags.map(( tag, index) => 
+              <li key={index} className="btn btn-light-blue">{tag}</li>
+            )}
+            </ul>
+          </div>
+          <div>
+            {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
+              <ToolCard key={id} name={name} description={description} url={url} tags={tags}></ToolCard>
+            ))}
+          </div>
         </div>
-        <div className="side-content xs-padded-container"></div>
+        <div className="side-content"></div>
         </div>
       </main>
     </div>
@@ -38,11 +46,11 @@ export default function Home( allToolsData ) {
 
 export async function getStaticProps() {
   const allToolsData = getToolsData()
-  const tags = getToolsTags()
+  const allTags = getToolsTags()
   return {
     props: {
       allToolsData,
-      tags
+      allTags
     }
   }
 }
