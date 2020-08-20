@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 import ToolCard from '../components/ToolCard'
+import TagCheckbox from '../components/TagCheckbox'
 
 import { getToolsData, getToolsTags } from '../lib/tools'
 
@@ -24,12 +25,11 @@ export default function Home( allToolsData ) {
       <div className="row">  
         <div className="side-content"></div>  
         <div className="main-content">
+          <div>A curated list of front end and web design tools  </div>
           <div>
-            <ul>
-            {allToolsData.allTags.map(( tag, index) => 
-              <li key={index} className="btn btn-light-blue">{tag}</li>
+            {allToolsData.allTags.map(( tag, index ) => 
+              <TagCheckbox key={index} tag={tag}></TagCheckbox>
             )}
-            </ul>
           </div>
           <div>
             {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
