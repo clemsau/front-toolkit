@@ -27,13 +27,13 @@ export default function Home( allToolsData ) {
         <div className="main-content">
           <div>A curated list of front end and web design tools  </div>
           <div>
-            {allToolsData.allTags.map(( tag, index ) => 
-              <TagCheckbox key={index} tag={tag}></TagCheckbox>
+            {allToolsData.allTags.map(( tag ) => 
+              <TagCheckbox tag={tag}></TagCheckbox>
             )}
           </div>
           <div>
             {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
-              <ToolCard key={id} name={name} description={description} url={url} tags={tags}></ToolCard>
+              <ToolCard name={name} description={description} url={url} tags={tags}></ToolCard>
             ))}
           </div>
         </div>
