@@ -15,4 +15,5 @@ fields:
   name: tags
   label: tags
 pages:
+- tools/ColorsAndFonts.md
 - tools/Unsplash.md
