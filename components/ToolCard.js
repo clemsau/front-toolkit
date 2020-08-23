@@ -16,7 +16,7 @@ export default function ToolCard({key, name, description, url, tags}) {
                         ))}
                         </ul>
                     </div>                
-                </div>sdqxw
+                </div>
             </a>
         </div>
     )
