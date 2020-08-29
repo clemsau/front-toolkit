@@ -25,17 +25,17 @@ export default function Home( allToolsData ) {
       <div className="row">  
         <div className="side-content"></div>  
         <div className="main-content">
-          <div classname="content-block">
+          <div className="content-block s-vertical-margin">
             <div className="inline-block">A curated list of front end and web design tools  </div>
             <div className="btn btn-pink">Select all</div>
             <div className="btn btn-pink">Unselect all</div>
           </div>
-          <div>
+          <div className="content-block s-vertical-margin">
             {allToolsData.allTags.map(( tag ) => 
               <TagCheckbox tag={tag}></TagCheckbox>
             )}
           </div>
-          <div>
+          <div className="content-block">
             {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
               <ToolCard name={name} description={description} url={url} tags={tags}></ToolCard>
             ))}

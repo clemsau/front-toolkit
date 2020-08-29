@@ -33,11 +33,11 @@
   }
 
 .content-block {
-    display: inline;
+    display: block;
 }
 
 .inline-block {
-    display: inline-block;
+    display: inline;
 }
 
 .main-content {
@@ -119,4 +119,8 @@
 
 .s-padded-container {
     padding: 1rem;
+}
+
+.s-vertical-margin {
+    margin: 1rem 0 1rem 0;
 }
