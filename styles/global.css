@@ -27,6 +27,14 @@
     text-align: center;
 }
 
+#footer {
+    text-align: center;
+}
+
+#footer a {
+    color: cornflowerblue;
+}
+
 .row {  
     display: flex;
     flex-wrap: wrap;
@@ -123,4 +131,8 @@
 
 .s-vertical-margin {
     margin: 1rem 0 1rem 0;
+}
+
+.shape-divider {
+    vertical-align: bottom;
 }

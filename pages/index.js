@@ -19,7 +19,7 @@ export default function Home( allToolsData ) {
       <main>
         <div id="header-background">
           <h1 id="title">Front toolkit</h1>
-          <img src="images/Vector_1.svg" id="vector-1"></img>
+          <img src="images/Vector_1.svg" id="vector-1" className="shape-divider"></img>
         </div>
         
       <div className="row">  
@@ -35,10 +35,13 @@ export default function Home( allToolsData ) {
               <TagCheckbox tag={tag}></TagCheckbox>
             )}
           </div>
-          <div className="content-block">
+          <div className="content-block s-vertical-margin">
             {allToolsData.allToolsData.map(({ id, name, url, description, tags }) => (
               <ToolCard name={name} description={description} url={url} tags={tags}></ToolCard>
             ))}
+          </div>
+          <div className="content-block" id="footer">
+              <p>Checkout the project <a href="https://github.com/ClemSau/front-toolkit" target="_blank">repository</a> &emsp; Made with ♥ by <a href="https://clementsauvage.com/" target="_blank">Clément</a></p>
           </div>
         </div>
         <div className="side-content"></div>
