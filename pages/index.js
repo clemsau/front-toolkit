@@ -31,8 +31,8 @@ export default function Home( allToolsData ) {
             <div className="btn btn-pink">Unselect all</div>
           </div>
           <div className="content-block s-vertical-margin">
-            {allToolsData.allTags.map(( tag ) => 
-              <TagCheckbox tag={tag}></TagCheckbox>
+            {allToolsData.allTags.map(( index, tag ) => 
+              <TagCheckbox key={index} tag={tag}></TagCheckbox>
             )}
           </div>
           <div className="content-block s-vertical-margin">
