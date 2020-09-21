@@ -16,4 +16,5 @@ fields:
   label: tags
 pages:
 - tools/ColorsAndFonts.md
+- tools/StateofCSS.md
 - tools/Unsplash.md
