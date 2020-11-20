@@ -15,6 +15,7 @@ fields:
   name: tags
   label: tags
 pages:
+- tools/ColorHex.md
 - tools/ColorsAndFonts.md
 - tools/StateofCSS.md
 - tools/Unsplash.md
