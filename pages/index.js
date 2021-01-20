@@ -14,6 +14,7 @@ export default function Home( allToolsData ) {
         <title>Front toolkit</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"/> 
+        <script async src="https://cdn.splitbee.io/sb.js"></script>
       </Head>
 
       <main>
