@@ -5,5 +5,5 @@ export default function ToolCard({key, tag}) {
 }
 
 function isTagActive(tagButton) {
-    console.log("bla");
+    
 }

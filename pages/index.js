@@ -21,8 +21,9 @@ export default function Home( allToolsData ) {
       <main>
         <div id="header-background">
           <h1 id="title">Front toolkit</h1>
-          <img src="images/Vector_1.svg" id="vector-1" className="shape-divider"></img>
+          <img src="images/Vector_1.svg" id="vector-1"></img>
         </div>
+        
         
       <div className="row">  
         <div className="side-content"></div>  

@@ -12,7 +12,7 @@ export default function ToolCard({key, name, description, url, tags}) {
                     <div className="card-tags-content">
                         <ul>
                         {tags.map(tag => (
-                            <li key={tag.id} className="btn btn-light-blue">{tag}</li>
+                            <li key={tag.id} className="tag tag-light-blue">{tag}</li>
                         ))}
                         </ul>
                     </div>                
