@@ -17,6 +17,7 @@ fields:
 pages:
 - tools/ColorHex.md
 - tools/ColorsAndFonts.md
+- tools/Shuffle.md
 - tools/StateofCSS.md
 - tools/Unsplash.md
 - tools/flaticon.md
